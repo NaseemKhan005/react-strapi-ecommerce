@@ -15,7 +15,7 @@ const Navbar = () => {
 	const { pathname } = useLocation();
 
 	return (
-		<div className="border-b">
+		<div className="border-b mb-8">
 			<div className="flex items-center justify-between container py-3 px-5 md:px-10 mx-auto">
 				<Link
 					to="/"
@@ -28,8 +28,8 @@ const Navbar = () => {
 				</Link>
 				<nav>
 					<ul
-						className={`flex px-5 md:px-0 md:items-center gap-5 md:gap-3 lg:gap-5 md:relative fixed top-0 w-full sm:w-80 h-screen md:shadow-none md:bg-transparent flex-col md:flex-row pt-28 md:pt-0 md:w-fit md:h-auto bg-white shadow-xl z-[100] md:z-auto transition-all duration-500 ${
-							menu ? "left-0" : "-left-full md:left-0"
+						className={`flex px-5 md:px-0 md:items-center gap-5 md:gap-3 lg:gap-5 md:relative fixed top-0 w-full sm:w-80 h-screen md:shadow-none md:bg-transparent flex-col md:flex-row pt-28 md:pt-0 md:w-fit md:h-auto bg-white z-[100] md:z-auto transition-all duration-500 ${
+							menu ? "left-0 shadow-xl" : "-left-full md:left-0"
 						}`}
 					>
 						{navLinks.map((link) => (
